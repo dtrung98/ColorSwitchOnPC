@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A8BEF03-F2D9-4B62-9B5E-7EF72212F534}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>colorswitchdesktop</RootNamespace>
+    <AssemblyName>colorswitchdesktop</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>vi</TargetCulture>
+    <ProductName>Color Switch for Desktop By LDT</ProductName>
+    <PublisherName>Lê Đình Trung</PublisherName>
+    <SuiteName>ldtcoder</SuiteName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>10</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>colorSwitch.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>colorswitchdesktop.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>BDAB8A2BC77B6378A1232D8377F19F7E11FF14E8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>colorswitchdesktop_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>colorswitchdesktop_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="colorswitchdesktop_TemporaryKey.pfx" />
+    <None Include="EveryExamplePastedHere_2_TemporaryKey.pfx" />
+    <None Include="EveryExamplePastedHere_TemporaryKey.pfx" />
+    <EmbeddedResource Include="Fonts\ARCENA.ttf" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus 1 Hour Filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Christmas Star-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recurring Appointment-90.png" />
+    <None Include="Resources\Recurring Appointment-104.png" />
+    <None Include="Resources\Recurring Appointment-26.png" />
+    <None Include="bin\Debug\color_switchLogo.png" />
+    <Content Include="colorSwitch.ico" />
+    <None Include="Resources\Circled Up Right 2 Filled-34.png" />
+    <None Include="Resources\Logout Rounded Filled-34.png" />
+    <None Include="Resources\Room Sound Filled-34.png" />
+    <None Include="Resources\Musical Notes-34.png" />
+    <None Include="Resources\Musical Notes-40.png" />
+    <None Include="Resources\Musical Notes-50.png" />
+    <None Include="Resources\Musical Notes-25.png" />
+    <None Include="Resources\color_switch_logo3.png" />
+    <None Include="Resources\color_switch_logo2.png" />
+    <None Include="Resources\color_switch_logo.png" />
+    <None Include="Resources\media-play-symbol %282%29.png" />
+    <None Include="Resources\1482115771_Hashtag.png" />
+    <None Include="Resources\wheel.wav" />
+    <EmbeddedResource Include="Resources\victory.wav" />
+    <None Include="Resources\tic.wav" />
+    <None Include="Resources\tapclock.wav" />
+    <None Include="Resources\start.wav" />
+    <EmbeddedResource Include="Resources\star.wav" />
+    <None Include="Resources\slowdown.wav" />
+    <None Include="Resources\inprogress.wav" />
+    <None Include="Resources\gift.wav" />
+    <None Include="Resources\error.wav" />
+    <None Include="Resources\deadclock.wav" />
+    <None Include="Resources\dead.wav" />
+    <EmbeddedResource Include="Resources\colorswitch.wav" />
+    <EmbeddedResource Include="Resources\button.wav" />
+    <None Include="Resources\bulle.wav" />
+    <None Include="Resources\brickbreak.wav" />
+    <None Include="Resources\breakball1.wav" />
+    <None Include="Resources\boost.wav" />
+    <None Include="Resources\achat.wav" />
+    <None Include="Resources\Sort Up Filled-50.png" />
+    <None Include="Resources\Up Right Filled-50.png" />
+    <None Include="Resources\External Link Filled-50.png" />
+    <None Include="Resources\Cancel Filled-50blend.png" />
+    <None Include="Resources\plop.wav" />
+    <EmbeddedResource Include="SoundNMusic\blackwhite.mp3" />
+    <EmbeddedResource Include="SoundNMusic\blank.txt" />
+    <EmbeddedResource Include="SoundNMusic\border.mp3" />
+    <EmbeddedResource Include="SoundNMusic\bounce.mp3" />
+    <EmbeddedResource Include="SoundNMusic\breakmusic.mp3" />
+    <EmbeddedResource Include="SoundNMusic\brick.mp3" />
+    <EmbeddedResource Include="SoundNMusic\cave.mp3" />
+    <EmbeddedResource Include="SoundNMusic\christmas.mp3" />
+    <EmbeddedResource Include="SoundNMusic\circle.mp3" />
+    <EmbeddedResource Include="SoundNMusic\climb.mp3" />
+    <EmbeddedResource Include="SoundNMusic\color2d.mp3" />
+    <EmbeddedResource Include="SoundNMusic\colorswap.mp3" />
+    <EmbeddedResource Include="SoundNMusic\control.mp3" />
+    <EmbeddedResource Include="SoundNMusic\dodge.mp3" />
+    <EmbeddedResource Include="SoundNMusic\easychallenge.mp3" />
+    <EmbeddedResource Include="SoundNMusic\floors.mp3" />
+    <EmbeddedResource Include="SoundNMusic\gravity.mp3" />
+    <EmbeddedResource Include="SoundNMusic\hardchallenge.mp3" />
+    <EmbeddedResource Include="SoundNMusic\hop.mp3" />
+    <EmbeddedResource Include="SoundNMusic\jumpmusic.mp3" />
+    <EmbeddedResource Include="SoundNMusic\linee.mp3" />
+    <EmbeddedResource Include="SoundNMusic\loop.mp3" />
+    <EmbeddedResource Include="SoundNMusic\mediumchallenge.mp3" />
+    <EmbeddedResource Include="SoundNMusic\music.mp3" />
+    <EmbeddedResource Include="SoundNMusic\race.mp3" />
+    <EmbeddedResource Include="SoundNMusic\reversechallenge.mp3" />
+    <EmbeddedResource Include="SoundNMusic\settings.txt" />
+    <EmbeddedResource Include="SoundNMusic\shoot.mp3" />
+    <EmbeddedResource Include="SoundNMusic\slide.mp3" />
+    <EmbeddedResource Include="SoundNMusic\slow.mp3" />
+    <EmbeddedResource Include="SoundNMusic\spinmusic.mp3" />
+    <EmbeddedResource Include="SoundNMusic\split.mp3" />
+    <EmbeddedResource Include="SoundNMusic\swoop.mp3" />
+    <EmbeddedResource Include="SoundNMusic\turn.mp3" />
+    <EmbeddedResource Include="SoundNMusic\warp.mp3" />
+    <EmbeddedResource Include="SoundNMusic\zigzag.mp3" />
+    <None Include="Resources\jump.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

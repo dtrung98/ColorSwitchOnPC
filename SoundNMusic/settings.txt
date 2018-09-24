@@ -1,0 +1,59 @@
+{
+	"animDuration":1,
+	"gameOverDuration": 2,
+	"fadeDuration": 0.25,
+    
+	"titleAlpha": [0.4, 0.2, 0.4],
+	"jumpTime": 0.2,
+
+    
+    "config":[
+	    {
+			"startSpacing": 14, "minSpacing": 14, "maxSpacing": 24,
+			"speed": 15, "speedipad": 14, "speedlow": 13,
+			"accelFreq": 10, "accel": 0.1
+	    },
+	    {
+			"startSpacing": 14, "minSpacing": 15, "maxSpacing": 30,
+			"speed": 11, "speedipad": 10, "speedlow": 9,
+			"accelFreq": 10, "accel": 0.05
+	    },
+	    {
+			"startSpacing": 14, "minSpacing": 15, "maxSpacing": 30,
+			"speed": 8, "speedipad": 7, "speedlow": 7,
+			"accelFreq": 10, "accel": 0.05
+	    },
+	    {
+			"startSpacing": 14, "minSpacing": 15, "maxSpacing": 30,
+			"speed": 8, "speedipad": 7, "speedlow": 7,
+			"accelFreq": 10, "accel": 0.05
+	    },
+	    {
+			"startSpacing": 14, "minSpacing": 15, "maxSpacing": 30,
+			"speed": 8, "speedipad": 7, "speedlow": 7,
+			"accelFreq": 10, "accel": 0.05
+	    },
+	    {
+			"startSpacing": 14, "minSpacing": 15, "maxSpacing": 30,
+			"speed": 8, "speedipad": 7, "speedlow": 7,
+			"accelFreq": 10, "accel": 0.05
+	    }
+    ],
+
+	"stickScale": 1,
+    "wallSize": 0.03,
+	
+	"rolloverColor": "#7FFFFFFF",
+
+	"menuColor": "#f8eddd",
+	"colors":[
+		"#4c8ca7",
+		"#f96e69",
+		"#97d17a",
+		"#ffcd74",
+		"#5c608d",
+		"#e492be"
+	],
+
+	"blocColors": "#1b252f"
+}
